@@ -13,7 +13,7 @@ public class Main {
 		while(Pattern.compile(boom).matcher(str).find()) {
 			str=str.replaceAll(boom, "");
 		}
-		if(str=="") {
+		if(str.isEmpty()) {
 			str="FRULA";
 		}
 		System.out.print(str);
